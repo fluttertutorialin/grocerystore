@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <g id="Group_7359" data-name="Group 7359" transform="translate(-32 -155)">
+    <g id="Group_6402" data-name="Group 6402" transform="translate(33 156)">
+      <g id="Ellipse_494" data-name="Ellipse 494" transform="translate(-1 -1)" fill="#1ac57f" stroke="#fff" stroke-width="1">
+        <circle cx="13.5" cy="13.5" r="13.5" stroke="none"/>
+        <circle cx="13.5" cy="13.5" r="13" fill="none"/>
+      </g>
+    </g>
+    <g id="Icon_feather-home" data-name="Icon feather-home" transform="translate(40 162.241)">
+      <path id="Path_11171" data-name="Path 11171" d="M4.5,7.187,9.675,3,14.85,7.187v6.579a1.174,1.174,0,0,1-1.15,1.2H5.65a1.174,1.174,0,0,1-1.15-1.2Z" transform="translate(-4.5 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+      <path id="Path_11172" data-name="Path 11172" d="M13.5,23.981V18h3.45v5.981" transform="translate(-10.05 -12.019)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+    </g>
+  </g>
+</svg>

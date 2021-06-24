@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <g id="Group_7357" data-name="Group 7357" transform="translate(-32 -342)">
+    <g id="Ellipse_495" data-name="Ellipse 495" transform="translate(32 342)" fill="#1ac57f" stroke="#fff" stroke-width="1">
+      <circle cx="13.5" cy="13.5" r="13.5" stroke="none"/>
+      <circle cx="13.5" cy="13.5" r="13" fill="none"/>
+    </g>
+    <path id="Icon_material-add-shopping-cart" data-name="Icon material-add-shopping-cart" d="M7.2,6.247H8.345V4.467h1.711V3.28H8.345V1.5H7.2V3.28H5.493V4.467H7.2Zm-2.282,5.34a1.188,1.188,0,0,0,0,2.373,1.188,1.188,0,0,0,0-2.373Zm5.7,0a1.188,1.188,0,1,0,1.141,1.187A1.163,1.163,0,0,0,10.627,11.587ZM5.02,9.659l.017-.071L5.55,8.62H9.8a1.129,1.129,0,0,0,1-.611L13,3.85l-.993-.57H12l-.627,1.187L9.8,7.433h-4l-.074-.16L4.443,4.467,3.9,3.28,3.365,2.093H1.5V3.28H2.641l2.054,4.5-.77,1.454a1.183,1.183,0,0,0-.143.57,1.168,1.168,0,0,0,1.141,1.187h6.845V9.807H5.162A.148.148,0,0,1,5.02,9.659Z" transform="translate(37.5 347.5)" fill="#fff"/>
+  </g>
+</svg>

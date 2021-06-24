@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <g id="Group_7361" data-name="Group 7361" transform="translate(-32 -438)">
+    <g id="Group_6575" data-name="Group 6575" transform="translate(33 438.229)">
+      <g id="Ellipse_495" data-name="Ellipse 495" transform="translate(-1 -0.229)" fill="#1ac57f" stroke="#fff" stroke-width="1">
+        <circle cx="13.5" cy="13.5" r="13.5" stroke="none"/>
+        <circle cx="13.5" cy="13.5" r="13" fill="none"/>
+      </g>
+    </g>
+    <path id="Icon_awesome-share-alt" data-name="Icon awesome-share-alt" d="M10.079,9.163a2.737,2.737,0,0,0-1.712.6L5.433,7.927a2.765,2.765,0,0,0,0-1.194L8.367,4.9A2.744,2.744,0,1,0,7.4,3.346L4.461,5.18a2.749,2.749,0,1,0,0,4.3L7.4,11.315a2.749,2.749,0,1,0,2.684-2.152Z" transform="translate(38 445)" fill="rgba(255,255,255,0)" stroke="#fff" stroke-width="1.4"/>
+  </g>
+</svg>

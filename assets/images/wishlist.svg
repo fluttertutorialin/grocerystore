@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <g id="Group_7355" data-name="Group 7355" transform="translate(-31 -293)">
+    <g id="Ellipse_495" data-name="Ellipse 495" transform="translate(31 293)" fill="#1ac57f" stroke="#fff" stroke-width="1">
+      <circle cx="13.5" cy="13.5" r="13.5" stroke="none"/>
+      <circle cx="13.5" cy="13.5" r="13" fill="none"/>
+    </g>
+    <path id="Icon_feather-heart" data-name="Icon feather-heart" d="M11.552,5.325a2.506,2.506,0,0,0-3.722,0l-.507.544-.507-.544a2.507,2.507,0,0,0-3.722,0,2.973,2.973,0,0,0,0,3.995l.507.544,3.722,3.995,3.722-3.995.507-.544a2.972,2.972,0,0,0,0-3.995Z" transform="translate(37.177 298.415)" fill="rgba(255,255,255,0)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

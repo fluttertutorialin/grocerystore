@@ -1,0 +1,40 @@
+name: grocerystore
+description: A new Flutter project.
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  get:
+  get_storage:
+
+  flutter_screenutil:
+  google_fonts:
+  line_icons:
+  flutter_svg:
+
+  device_info:
+  flutter_config:
+
+  intl:
+  dio:
+  dartz: 0.10.0-nullsafety.2
+  equatable:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # FOR IMAGE
+  assets:
+    - assets/images/
