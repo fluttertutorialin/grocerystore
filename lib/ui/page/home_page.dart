@@ -31,39 +31,41 @@ class HomePage extends StatelessWidget {
       drawer: Drawer(
           child: ListView(padding: EdgeInsets.zero, children: <Widget>[
         _drawerHeader(),
-        _drawerMenu(title: 'Home'),
+        _drawerMenu(title: ValueString.homeDrawerMenu),
         _drawerMenu(
-            title: 'All Categories',
+            title: ValueString.allCategoriesDrawerMenu,
             onTap: () {
               Get.back();
               Get.toNamed(AppRoute.ALL_CATEGORY);
             }),
         _drawerMenu(
-            title: 'My Orders',
+            title: ValueString.myOrdersDrawerMenu,
             onTap: () {
               Get.back();
               Get.toNamed(AppRoute.MY_ORDERS);
             }),
         _drawerMenu(
-            title: 'My Favourites',
+            title: ValueString.myFavouritesDrawerMenu,
             onTap: () {
               Get.back();
               Get.toNamed(AppRoute.MY_FAVOURITES);
             }),
-        _drawerMenu(title: 'My Cart', onTap: (){
-          Get.back();
-          Get.toNamed(AppRoute.MY_CART);
-        }),
-        _drawerMenu(title: 'Privacy Policy'),
-        _drawerMenu(title: 'Share'),
         _drawerMenu(
-            title: 'Settings',
+            title: ValueString.myCartDrawerMenu,
+            onTap: () {
+              Get.back();
+              Get.toNamed(AppRoute.MY_CART);
+            }),
+        _drawerMenu(title: ValueString.privacyPolicyDrawerMenu),
+        _drawerMenu(title: ValueString.shareDrawerMenu),
+        _drawerMenu(
+            title: ValueString.settingsDrawerMenu,
             onTap: () {
               Get.back();
               Get.toNamed(AppRoute.SETTINGS);
             }),
         _drawerMenu(
-            title: 'Logout',
+            title: ValueString.logoutDrawerMenu,
             onTap: () {
               Get.offNamedUntil(AppRoute.LOGIN, (route) => false);
             }),
@@ -79,7 +81,7 @@ class HomePage extends StatelessWidget {
                 children: [
               Padding(
                   padding: EdgeInsets.all(10),
-                  child: Text('Category',
+                  child: Text(ValueString.categoryHeaderCategory,
                       style: AppTextStyle.categoryHeaderStyle)),
               InkWell(
                   borderRadius: BorderRadius.circular(5.0),
@@ -88,8 +90,8 @@ class HomePage extends StatelessWidget {
                   child: Padding(
                       padding:
                           EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                      child:
-                          Text('View All', style: AppTextStyle.viewAllStyle)))
+                      child: Text(ValueString.viewAll,
+                          style: AppTextStyle.viewAllStyle)))
             ])),
         SliverToBoxAdapter(
             child: Container(
@@ -129,16 +131,17 @@ class HomePage extends StatelessWidget {
                 children: [
               Padding(
                   padding: EdgeInsets.all(10),
-                  child: Text('Best Seller',
+                  child: Text(ValueString.bestSellerHeaderCategory,
                       style: AppTextStyle.categoryHeaderStyle)),
               InkWell(
                   borderRadius: BorderRadius.circular(5.0),
                   splashColor: Theme.of(context).primaryColorLight,
                   onTap: () => Get.toNamed(AppRoute.VIEW_ALL),
                   child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                      child:
-                          Text('View All', style: AppTextStyle.viewAllStyle)))
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                      child: Text(ValueString.viewAll,
+                          style: AppTextStyle.viewAllStyle)))
             ])),
         SliverToBoxAdapter(
             child: Container(
@@ -234,7 +237,7 @@ class HomePage extends StatelessWidget {
                 children: [
               Padding(
                   padding: EdgeInsets.all(10),
-                  child: Text('Featured Deals',
+                  child: Text(ValueString.featuredDealsHeaderCategory,
                       style: AppTextStyle.categoryHeaderStyle)),
               InkWell(
                   borderRadius: BorderRadius.circular(5.0),
@@ -243,8 +246,8 @@ class HomePage extends StatelessWidget {
                   child: Padding(
                       padding:
                           EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                      child:
-                          Text('View All', style: AppTextStyle.viewAllStyle)))
+                      child: Text(ValueString.viewAll,
+                          style: AppTextStyle.viewAllStyle)))
             ])),
         SliverToBoxAdapter(
             child: Container(
@@ -344,8 +347,9 @@ class HomePage extends StatelessWidget {
             backgroundColor: Colors.grey.withOpacity(0.1),
             backgroundImage: ExactAssetImage(ImageAsset.profilePictureAsset)),
         SizedBox(height: 10.h),
-        Text('Kamlesh', style: AppTextStyle.drawerUserNameStyle),
-        Text('kamal.lakhani56@gmail.com'.toLowerCase(),
+        Text(ValueString.nameDevelopApp,
+            style: AppTextStyle.drawerUserNameStyle),
+        Text(ValueString.emailDevelopApp.toLowerCase(),
             style: AppTextStyle.drawerEmailStyle)
       ]));
 
@@ -366,7 +370,7 @@ class HomePage extends StatelessWidget {
                   Expanded(
                       flex: 1,
                       child: Column(children: [
-                        Text('Grocery Store',
+                        Text(ValueString.appName,
                             style: AppTextStyle.titleSliderStyle),
                         SizedBox(height: 10.h),
                         Text('Description',

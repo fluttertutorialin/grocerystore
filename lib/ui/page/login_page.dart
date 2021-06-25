@@ -108,15 +108,14 @@ class LoginPage extends GetView<LoginController> {
                             ])
                       ]))))));
 
-  _headerLogin(){
-    return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-      Text('Login', style: AppTextStyle.titleFormStyle),
-      Text('To Account', style: AppTextStyle.subTitleFormStyle),
+  _headerLogin() {
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      Text(ValueString.loginButton, style: AppTextStyle.titleFormStyle),
+      Text(ValueString.toAccountLoginHeader,
+          style: AppTextStyle.subTitleFormStyle),
       SizedBox(height: 10.h),
-      Text('Sign with email and password to use your account', style: AppTextStyle.descriptionFormStyle)
+      Text(ValueString.singWithEmailPasswordHeader,
+          style: AppTextStyle.descriptionFormStyle)
     ]);
   }
-
 }

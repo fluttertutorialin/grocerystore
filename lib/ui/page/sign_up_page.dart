@@ -27,7 +27,7 @@ class SignUpPage extends GetView<SignUpController> {
                         _headerSignUp(),
                         SizedBox(height: 40.h),
 
-                        //USERNAME, EMAIL, PASSWORD, MOBILE TEXTFIELD
+                        //USERNAME, EMAIL, PASSWORD, MOBILE
                         CustomTextFieldWidget(
                             controller: controller.userNameController,
                             validator: controller.userNameValidation,
@@ -76,9 +76,9 @@ class SignUpPage extends GetView<SignUpController> {
     return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Welcome', style: AppTextStyle.titleFormStyle),
+          Text(ValueString.welcomeHeader, style: AppTextStyle.titleFormStyle),
           SizedBox(height: 10.h),
-          Text('Please provide following details for your new account', style: AppTextStyle.descriptionFormStyle)
+          Text(ValueString.newAccountHeader, style: AppTextStyle.descriptionFormStyle)
         ]);
   }
 }

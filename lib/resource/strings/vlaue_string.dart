@@ -61,6 +61,34 @@ class ValueString {
   static const String loginButton = 'Login';
   static const String signUpButton = 'Sign Up';
 
+  // DRAWER MENU
+  static const String homeDrawerMenu = 'Home';
+  static const String allCategoriesDrawerMenu = 'All Categories';
+  static const String myOrdersDrawerMenu = 'My Orders';
+  static const String myFavouritesDrawerMenu = 'My Favourites';
+  static const String myCartDrawerMenu = 'My Cart';
+  static const String privacyPolicyDrawerMenu = 'Privacy Policy';
+  static const String shareDrawerMenu = 'Share';
+  static const String settingsDrawerMenu = 'Settings';
+  static const String logoutDrawerMenu = 'Logout';
+
+  //CATEGORY
+  static const String viewAll = 'View All';
+
+  static const String categoryHeaderCategory = 'Category';
+  static const String bestSellerHeaderCategory = 'Best Seller';
+  static const String featuredDealsHeaderCategory = 'Featured Deals';
+
+  //LOGIN - SIGNUP HEADER
+  static const String toAccountLoginHeader = 'To Account';
+  static const String singWithEmailPasswordHeader = 'Sign with email and password to use your account';
+  static const String welcomeHeader = 'Welcome';
+  static const String newAccountHeader = 'Please provide following details for your new account';
+
+  //APPLICATION DEVELOP
+  static const String nameDevelopApp = 'Kamlesh';
+  static const String emailDevelopApp = 'kamal.lakhani56@gmail.com';
+
   // VALIDATION LENGTH (MOBILE NO, EMAIL LENGTH ETC.)
   static const int splashScreenWait = 3;
   static const int mobileLength = 10;
