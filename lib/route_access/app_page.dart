@@ -77,5 +77,8 @@ class AppPage {
         name: AppRoute.TRACK_ORDER,
         page: () => TrackOrderPage()),
 
+    GetPage(
+        name: AppRoute.SETTINGS_EDIT_PROFILE,
+        page: () => SettingsEditProfilePage()),
   ];
 }

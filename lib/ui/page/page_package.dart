@@ -17,3 +17,4 @@ export 'my_favourites_page.dart';
 export 'my_cart_page.dart';
 export 'check_out_page.dart';
 export 'track_order_page.dart';
+export 'settings_edit_profile_page.dart';

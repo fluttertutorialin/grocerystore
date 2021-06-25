@@ -20,4 +20,5 @@ abstract class AppRoute {
   static const MY_CART = '/myCart';
   static const CHECKOUT = '/checkOut';
   static const TRACK_ORDER = 'trackOrder';
+  static const SETTINGS_EDIT_PROFILE = 'settingsEditProfile';
 }
