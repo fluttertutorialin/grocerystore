@@ -1,7 +1,5 @@
 import 'package:flutter_svg/svg.dart';
-import 'package:grocerystore/import_package.dart';
-import 'package:grocerystore/ui/widget/custom_appbar_widget.dart';
-import 'package:line_icons/line_icons.dart';
+import '../../import_package.dart';
 
 class SettingsEditProfilePage extends StatelessWidget {
   @override
@@ -60,7 +58,7 @@ class SettingsEditProfilePage extends StatelessWidget {
   }
 
   _settingMenu({String? title, Function()? onTap}) => ListTile(
-      trailing: Icon(LineIcons.arrowCircleRight),
+      trailing: IconFont.arrowCircleRight,
       title: Text(title!, style: AppTextStyle.drawerMenuStyle),
       onTap: onTap);
 }
