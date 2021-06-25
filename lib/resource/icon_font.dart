@@ -21,4 +21,5 @@ class IconFont {
   static const Icon arrowCircleRight = Icon( LineIcons.arrowCircleRight);
   static const Icon heart = Icon(LineIcons.heart, size: 15);
   static const Icon addToShoppingCart = Icon(LineIcons.addToShoppingCart, color: AppColors.whiteIconColor, size: 18);
+  static const Icon addressBook =  Icon(LineIcons.addressBook);
 }

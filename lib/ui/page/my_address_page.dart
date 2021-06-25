@@ -1,7 +1,6 @@
 import 'package:flutter_svg/svg.dart';
-import 'package:grocerystore/import_package.dart';
-import 'package:grocerystore/ui/widget/custom_appbar_widget.dart';
-import 'package:line_icons/line_icons.dart';
+import '../../import_package.dart';
+import '../widget/custom_appbar_widget.dart';
 
 class MyAddressPage extends StatelessWidget {
   @override
@@ -21,34 +20,41 @@ class MyAddressPage extends StatelessWidget {
               padding: EdgeInsets.all(10),
               child:
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                Icon(LineIcons.addressBook),
+                IconFont.addressBook,
                 SizedBox(width: 10.h),
                 Text('ADD NEW ADDRESS',
                     style: AppTextStyle.addNewAddressButtonTextStyle)
               ])),
-          Expanded(child: ListView.builder(
-              shrinkWrap: true,
-              itemCount: 5,
-              itemBuilder: (BuildContext context, int index) {
-                return Card(
-                    elevation: 0.5,
-                    color: AppColors.white,
-                    child: Container(
-                        padding: EdgeInsets.all(10),
-                        child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('Lakhani Kamlesh', style: AppTextStyle.addressNameStyle),
-                              SizedBox(height: 5.h),
-                              Text('Home Address', style: AppTextStyle.addressTypeStyle),
-                              Text('9586331823', style: AppTextStyle.mobileStyle),
-                              Text('kamal.lakhani56@gmail.com', style: AppTextStyle.emailStyle),
-                              SizedBox(height: 5.h),
-                              Text('Address', style: AppTextStyle.addressStyle),
-                              Divider(),
-                              Text('Set as your default delivery address', style: AppTextStyle.defaultAddressStyle),
-                            ])));
-              }))
+          Expanded(
+              child: ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: 5,
+                  itemBuilder: (BuildContext context, int index) {
+                    return Card(
+                        elevation: 0.5,
+                        color: AppColors.white,
+                        child: Container(
+                            padding: EdgeInsets.all(10),
+                            child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('Lakhani Kamlesh',
+                                      style: AppTextStyle.addressNameStyle),
+                                  SizedBox(height: 5.h),
+                                  Text('Home Address',
+                                      style: AppTextStyle.addressTypeStyle),
+                                  Text('9586331823',
+                                      style: AppTextStyle.mobileStyle),
+                                  Text('kamal.lakhani56@gmail.com',
+                                      style: AppTextStyle.emailStyle),
+                                  SizedBox(height: 5.h),
+                                  Text('Address',
+                                      style: AppTextStyle.addressStyle),
+                                  Divider(),
+                                  Text('Set as your default delivery address',
+                                      style: AppTextStyle.defaultAddressStyle),
+                                ])));
+                  }))
         ]));
   }
 }
