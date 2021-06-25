@@ -19,3 +19,4 @@ export 'check_out_page.dart';
 export 'track_order_page.dart';
 export 'settings_edit_profile_page.dart';
 export 'otp_page.dart';
+export 'notification_page.dart';

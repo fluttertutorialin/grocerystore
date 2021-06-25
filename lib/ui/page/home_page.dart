@@ -26,6 +26,7 @@ class HomePage extends GetWidget<HomeController> {
               color: AppColors.whiteIconColor, height: 15),
           actions: [
             CustomBackButton(
+                onBackTap: () => Get.toNamed(AppRoute.NOTIFICATION),
                 leading: SvgPicture.asset(ImageAsset.notificationIconAsset,
                     color: AppColors.whiteIconColor, height: 20))
           ]),
@@ -57,8 +58,16 @@ class HomePage extends GetWidget<HomeController> {
               Get.back();
               Get.toNamed(AppRoute.MY_CART);
             }),
-        _drawerMenu(title: ValueString.privacyPolicyDrawerMenu),
-        _drawerMenu(title: ValueString.shareDrawerMenu),
+        _drawerMenu(
+            title: ValueString.privacyPolicyDrawerMenu,
+            onTap: () {
+              Get.back();
+            }),
+        _drawerMenu(
+            title: ValueString.shareDrawerMenu,
+            onTap: () {
+              Get.back();
+            }),
         _drawerMenu(
             title: ValueString.settingsDrawerMenu,
             onTap: () {

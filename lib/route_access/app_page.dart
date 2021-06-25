@@ -84,5 +84,10 @@ class AppPage {
     GetPage(
         name: AppRoute.OTP,
         page: () => OTPPage()),
+
+    GetPage(
+        name: AppRoute.NOTIFICATION,
+        page: () => NotificationPage()),
+
   ];
 }
