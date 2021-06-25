@@ -16,41 +16,48 @@ class MyOrdersPage extends StatelessWidget {
             Card(
                 color: AppColors.white,
                 elevation: 0.8,
-                child: Container(
-                    padding: EdgeInsets.all(10),
-                    child: Column(children: [
-                      Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(
-                                flex: 1,
-                                child: Image.asset(ImageAsset.product2IconAsset,
-                                    width: 90.w, height: 90.h)),
-                            SizedBox(width: 8.h),
-                            Expanded(
-                                flex: 4,
-                                child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text('order Id',
-                                          style: AppTextStyle.orderIdStyle),
-                                      SizedBox(height: 3.h),
-                                      Text('Total Items: 0',
-                                          style:
-                                              AppTextStyle.totalQuantityStyle),
-                                      Text('Rs. 00',
-                                          style:
-                                              AppTextStyle.totalQuantityStyle),
-                                      Text('Address',
-                                          style:
-                                              AppTextStyle.totalQuantityStyle),
-                                      Text('Delivered by 10-10-2020',
-                                          textAlign: TextAlign.right,
-                                          style: AppTextStyle.deliveredByStyle),
-                                    ]))
-                          ])
-                    ])))
+                child: InkWell(
+                    borderRadius: BorderRadius.circular(10.0),
+                    splashColor: Theme.of(context).primaryColorLight,
+                    onTap: () => Get.toNamed(AppRoute.TRACK_ORDER),
+                    child: Container(
+                        padding: EdgeInsets.all(10),
+                        child: Column(children: [
+                          Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                    flex: 1,
+                                    child: Image.asset(
+                                        ImageAsset.product2IconAsset,
+                                        width: 90.w,
+                                        height: 90.h)),
+                                SizedBox(width: 8.h),
+                                Expanded(
+                                    flex: 4,
+                                    child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text('order Id',
+                                              style: AppTextStyle.orderIdStyle),
+                                          SizedBox(height: 3.h),
+                                          Text('Total Items: 0',
+                                              style: AppTextStyle
+                                                  .totalQuantityStyle),
+                                          Text('Rs. 00',
+                                              style: AppTextStyle
+                                                  .totalQuantityStyle),
+                                          Text('Address',
+                                              style: AppTextStyle
+                                                  .totalQuantityStyle),
+                                          Text('Delivered by 10-10-2020',
+                                              textAlign: TextAlign.right,
+                                              style: AppTextStyle
+                                                  .deliveredByStyle),
+                                        ]))
+                              ])
+                        ]))))
           ]),
           Padding(
               padding: EdgeInsets.symmetric(vertical: 5),

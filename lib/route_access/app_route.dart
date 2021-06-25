@@ -18,4 +18,6 @@ abstract class AppRoute {
   static const MY_ORDERS = '/myOrders';
   static const MY_FAVOURITES = '/myFavourites';
   static const MY_CART = '/myCart';
+  static const CHECKOUT = '/checkOut';
+  static const TRACK_ORDER = 'trackOrder';
 }

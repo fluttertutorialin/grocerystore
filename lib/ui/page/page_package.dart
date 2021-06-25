@@ -15,3 +15,5 @@ export 'my_address_page.dart';
 export 'my_orders_page.dart';
 export 'my_favourites_page.dart';
 export 'my_cart_page.dart';
+export 'check_out_page.dart';
+export 'track_order_page.dart';

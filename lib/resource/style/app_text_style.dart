@@ -28,7 +28,7 @@ class AppTextStyle {
   static final TextStyle buttonTextStyle = _textStyle.copyWith(fontSize: Dimens.fontSize16, color: Colors.white);
   static final TextStyle addToCartButtonTextStyle = _textStyle.copyWith(fontSize: Dimens.fontSize14, color: Colors.white);
   static final TextStyle addNewAddressButtonTextStyle = _textStyle.copyWith(fontSize: Dimens.fontSize14, color: AppColors.black);
-
+  static final TextStyle cancelOrderButtonTextStyle = semiBoldStyle.copyWith(fontSize: Dimens.fontSize14, color: Colors.red);
 
   static final TextStyle appBarTitleStyle = _textStyle.copyWith(fontSize: Dimens.fontSize16, color: AppColors.white);
 
@@ -87,6 +87,16 @@ class AppTextStyle {
   static final TextStyle noMoreOrderStyle = boldStyle.copyWith(fontSize: Dimens.fontSize12, letterSpacing: 0.5, color: Colors.black54);
   static final TextStyle orderHistoryStyle = boldStyle.copyWith(fontSize: Dimens.fontSize14, letterSpacing: 0.5, color: Colors.black);
   static final TextStyle deliveredByHistoryStyle = _textStyle.copyWith(fontSize: Dimens.fontSize12, letterSpacing: 0.5, color: AppColors.primaryColor);
+
+  static final TextStyle checkOutHeaderTitleStyle = boldStyle.copyWith(fontSize: Dimens.fontSize14, letterSpacing: 0.5, color: AppColors.black);
+  static final TextStyle checkOutLabelStyle = _textStyle.copyWith(fontSize: Dimens.fontSize12, letterSpacing: 0.5, color: Colors.black45);
+  static final TextStyle totalPriceLabelStyle = boldStyle.copyWith(fontSize: Dimens.fontSize12, letterSpacing: 0.5, color: Colors.black45);
+  static final TextStyle checkOutPriceStyle = _textStyle.copyWith(fontSize: Dimens.fontSize12, letterSpacing: 0.5, color: Colors.black);
+  static final TextStyle totalPriceStyle = boldStyle.copyWith(fontSize: Dimens.fontSize14, letterSpacing: 0.5, color: Colors.black);
+  static final TextStyle nameBillingAddressType = boldStyle.copyWith(fontSize: Dimens.fontSize12, letterSpacing: 0.5, color: Colors.blueGrey);
+  static final TextStyle addressBillingAddressStyle = _textStyle.copyWith(fontSize: Dimens.fontSize12, letterSpacing: 0.5, color: AppColors.black);
+  static final TextStyle orderIdCheckOutStyle = _textStyle.copyWith(fontSize: Dimens.fontSize14, letterSpacing: 0.5, color: Colors.black);
+
 
   static final TextStyle errorTextFieldStyle = _textStyle.copyWith(fontSize: Dimens.fontSize12, color: AppColors.error);
   static final TextStyle errorStyle = _textStyle.copyWith(fontSize: Dimens.fontSize14, color: AppColors.error);

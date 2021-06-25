@@ -69,5 +69,13 @@ class AppPage {
         name: AppRoute.MY_CART,
         page: () => MyCartPage()),
 
+    GetPage(
+        name: AppRoute.CHECKOUT,
+        page: () => CheckOutPage()),
+
+    GetPage(
+        name: AppRoute.TRACK_ORDER,
+        page: () => TrackOrderPage()),
+
   ];
 }

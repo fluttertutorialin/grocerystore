@@ -7,7 +7,7 @@ class AllCategoryPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: CustomAppbarWidget(
-            title: 'All Category',
+            title: ValueString.allCategoriesDrawerMenu,
             showBackButton: true,
             leading: SvgPicture.asset(ImageAsset.backArrowAsset,
                 color: AppColors.whiteIconColor, height: 15)),

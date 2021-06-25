@@ -111,16 +111,15 @@ class MyCartPage extends StatelessWidget {
           Container(
               padding: EdgeInsets.all(10),
               child: TextButton(
-                child: Container(
-                    padding: EdgeInsets.all(10),
-                    child: Center(
-                        child: Text("Proceed To Checkout",
-                            style: AppTextStyle.buttonTextStyle))),
-                style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all(AppColors.primaryColor)),
-                onPressed: () {}
-              ))
+                  child: Container(
+                      padding: EdgeInsets.all(10),
+                      child: Center(
+                          child: Text("Proceed To Checkout",
+                              style: AppTextStyle.buttonTextStyle))),
+                  style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all(AppColors.primaryColor)),
+                  onPressed: () => Get.toNamed(AppRoute.CHECKOUT)))
         ]));
   }
 }
