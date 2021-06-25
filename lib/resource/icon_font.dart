@@ -19,5 +19,6 @@ class IconFont {
   static const Icon logout = Icon(LineIcons.lock, color: AppColors.whiteIconColor);
   static const Icon notification = Icon(LineIcons.user, color: AppColors.whiteIconColor);
   static const Icon arrowCircleRight = Icon( LineIcons.arrowCircleRight);
-
+  static const Icon heart = Icon(LineIcons.heart, size: 15);
+  static const Icon addToShoppingCart = Icon(LineIcons.addToShoppingCart, color: AppColors.whiteIconColor, size: 18);
 }

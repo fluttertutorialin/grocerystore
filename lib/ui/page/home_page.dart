@@ -6,7 +6,6 @@
 import 'package:flutter_svg/svg.dart';
 import '../../controller/controller_package.dart' show HomeController;
 import '../widget/custom_back_button.dart';
-import 'package:line_icons/line_icons.dart';
 import '../widget/custom_appbar_widget.dart';
 import '../../import_package.dart';
 
@@ -184,9 +183,7 @@ class HomePage extends GetWidget<HomeController> {
                                                           .grey
                                                           .withOpacity(0.1),
                                                       maxRadius: 15,
-                                                      child: Icon(
-                                                          LineIcons.heart,
-                                                          size: 15))),
+                                                      child: IconFont.heart)),
                                               SizedBox(height: 15.h),
                                               Image.asset(
                                                   ImageAsset.product2IconAsset,
@@ -225,15 +222,11 @@ class HomePage extends GetWidget<HomeController> {
                                                               topLeft: Radius
                                                                   .circular(
                                                                       10.0),
-                                                              bottomLeft:
-                                                                  Radius.circular(
+                                                              bottomLeft: Radius
+                                                                  .circular(
                                                                       0.0))),
-                                                  child: Icon(
-                                                      LineIcons
-                                                          .addToShoppingCart,
-                                                      size: 18,
-                                                      color: AppColors
-                                                          .whiteIconColor))
+                                                  child: IconFont
+                                                      .addToShoppingCart)
                                             ]))
                                       ])))));
                     }))),
@@ -290,9 +283,7 @@ class HomePage extends GetWidget<HomeController> {
                                                           .grey
                                                           .withOpacity(0.1),
                                                       maxRadius: 15,
-                                                      child: Icon(
-                                                          LineIcons.heart,
-                                                          size: 15))),
+                                                      child: IconFont.heart)),
                                               SizedBox(height: 15.h),
                                               Image.asset(
                                                   ImageAsset.product2IconAsset,
@@ -331,15 +322,11 @@ class HomePage extends GetWidget<HomeController> {
                                                               topLeft: Radius
                                                                   .circular(
                                                                       10.0),
-                                                              bottomLeft:
-                                                                  Radius.circular(
+                                                              bottomLeft: Radius
+                                                                  .circular(
                                                                       0.0))),
-                                                  child: Icon(
-                                                      LineIcons
-                                                          .addToShoppingCart,
-                                                      size: 18,
-                                                      color: AppColors
-                                                          .whiteIconColor))
+                                                  child: IconFont
+                                                      .addToShoppingCart)
                                             ]))
                                       ])))));
                     })))
