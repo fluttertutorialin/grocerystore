@@ -4,12 +4,13 @@
 */
 
 import 'package:flutter_svg/svg.dart';
-import 'package:grocerystore/ui/widget/custom_back_button.dart';
+import '../../controller/controller_package.dart' show HomeController;
+import '../widget/custom_back_button.dart';
 import 'package:line_icons/line_icons.dart';
 import '../widget/custom_appbar_widget.dart';
 import '../../import_package.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends GetWidget<HomeController> {
   final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -66,9 +67,7 @@ class HomePage extends StatelessWidget {
             }),
         _drawerMenu(
             title: ValueString.logoutDrawerMenu,
-            onTap: () {
-              Get.offNamedUntil(AppRoute.LOGIN, (route) => false);
-            }),
+            onTap: () => controller.applicationLogout()),
       ])),
       body: CustomScrollView(slivers: <Widget>[
         //SLIDER
