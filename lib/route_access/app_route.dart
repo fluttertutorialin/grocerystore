@@ -21,4 +21,5 @@ abstract class AppRoute {
   static const CHECKOUT = '/checkOut';
   static const TRACK_ORDER = 'trackOrder';
   static const SETTINGS_EDIT_PROFILE = 'settingsEditProfile';
+  static const OTP = 'otp';
 }

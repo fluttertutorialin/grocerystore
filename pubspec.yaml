@@ -22,9 +22,11 @@ dependencies:
 
   device_info:
   flutter_config:
+  flutter_share:
 
   intl:
   dio:
+  pinput:
   dartz: 0.10.0-nullsafety.2
   equatable:
 

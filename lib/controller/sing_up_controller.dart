@@ -39,7 +39,7 @@ class SignUpController extends BaseController
       loading(true);
 
       //HOME SCREEN NAVIGATION
-      AppRoute.HOME.changeScreen();
+      AppRoute.OTP.changeScreen();
     }
   }
 

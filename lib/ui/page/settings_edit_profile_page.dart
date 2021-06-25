@@ -29,9 +29,9 @@ class SettingsEditProfilePage extends StatelessWidget {
                       backgroundImage:
                           ExactAssetImage(ImageAsset.profilePictureAsset)),
                   SizedBox(height: 10.h),
-                  Text(ValueString.nameDevelopApp,
+                  Text(ValueString.nameDeveloperApp,
                       style: AppTextStyle.drawerUserNameStyle),
-                  Text(ValueString.emailDevelopApp.toLowerCase(),
+                  Text(ValueString.emailDeveloperApp.toLowerCase(),
                       style: AppTextStyle.drawerEmailStyle)
                 ])),
             DecoratedBox(

@@ -86,8 +86,8 @@ class ValueString {
   static const String newAccountHeader = 'Please provide following details for your new account';
 
   //APPLICATION DEVELOP
-  static const String nameDevelopApp = 'Kamlesh';
-  static const String emailDevelopApp = 'kamal.lakhani56@gmail.com';
+  static const String nameDeveloperApp = 'Kamlesh';
+  static const String emailDeveloperApp = 'kamal.lakhani56@gmail.com';
 
   // VALIDATION LENGTH (MOBILE NO, EMAIL LENGTH ETC.)
   static const int splashScreenWait = 3;

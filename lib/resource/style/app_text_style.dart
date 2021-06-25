@@ -46,6 +46,8 @@ class AppTextStyle {
   static final TextStyle titleFormStyle = semiBoldStyle.copyWith(fontSize: Dimens.fontSize22, color: AppColors.primaryColor);
   static final TextStyle subTitleFormStyle = semiBoldStyle.copyWith(fontSize: Dimens.fontSize20, color: AppColors.primaryColor);
   static final TextStyle descriptionFormStyle = semiBoldStyle.copyWith(fontSize: Dimens.fontSize14, color: AppColors.black);
+  static final TextStyle otpDescriptionStyle = semiBoldStyle.copyWith(fontSize: Dimens.fontSize14, color: AppColors.black);
+  static final TextStyle otpSentEmailStyle = _textStyle.copyWith(fontSize: Dimens.fontSize12, letterSpacing: 0.5, color: AppColors.black);
 
   static final TextStyle categoryHeaderStyle = boldStyle.copyWith(fontSize: Dimens.fontSize14, letterSpacing: 0.5, color: Colors.black54);
   static final TextStyle viewAllStyle = semiBoldStyle.copyWith(fontSize: Dimens.fontSize12, color: AppColors.primaryColor);
@@ -96,6 +98,8 @@ class AppTextStyle {
   static final TextStyle nameBillingAddressType = boldStyle.copyWith(fontSize: Dimens.fontSize12, letterSpacing: 0.5, color: Colors.blueGrey);
   static final TextStyle addressBillingAddressStyle = _textStyle.copyWith(fontSize: Dimens.fontSize12, letterSpacing: 0.5, color: AppColors.black);
   static final TextStyle orderIdCheckOutStyle = _textStyle.copyWith(fontSize: Dimens.fontSize14, letterSpacing: 0.5, color: Colors.black);
+
+  static final TextStyle otpSessionEndStyle = _textStyle.copyWith(fontSize: Dimens.fontSize12, letterSpacing: 0.5, color: Colors.black54);
 
 
   static final TextStyle errorTextFieldStyle = _textStyle.copyWith(fontSize: Dimens.fontSize12, color: AppColors.error);

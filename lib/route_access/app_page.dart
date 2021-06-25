@@ -80,5 +80,9 @@ class AppPage {
     GetPage(
         name: AppRoute.SETTINGS_EDIT_PROFILE,
         page: () => SettingsEditProfilePage()),
+
+    GetPage(
+        name: AppRoute.OTP,
+        page: () => OTPPage()),
   ];
 }

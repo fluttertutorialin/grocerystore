@@ -347,9 +347,9 @@ class HomePage extends StatelessWidget {
             backgroundColor: Colors.grey.withOpacity(0.1),
             backgroundImage: ExactAssetImage(ImageAsset.profilePictureAsset)),
         SizedBox(height: 10.h),
-        Text(ValueString.nameDevelopApp,
+        Text(ValueString.nameDeveloperApp,
             style: AppTextStyle.drawerUserNameStyle),
-        Text(ValueString.emailDevelopApp.toLowerCase(),
+        Text(ValueString.emailDeveloperApp.toLowerCase(),
             style: AppTextStyle.drawerEmailStyle)
       ]));
 
