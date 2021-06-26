@@ -3,11 +3,9 @@ import '../base/base_controller.dart';
 
 class ChangePasswordController extends BaseController {
   //TEXT CLEAR AND GET
-  final TextEditingController newPasswordController = TextEditingController();
-  final TextEditingController confirmPasswordController =
-      TextEditingController();
-  final TextEditingController currentPasswordController =
-      TextEditingController();
+  final TextEditingController? newPasswordController = TextEditingController();
+  final TextEditingController? confirmPasswordController = TextEditingController();
+  final TextEditingController? currentPasswordController = TextEditingController();
 
   //PASSWORD VISIBLE OR NOT
   final _passwordVisible = false.obs;
@@ -59,9 +57,9 @@ class ChangePasswordController extends BaseController {
       AppRoute.HOME.offAllNamed();
     }, error: (error) {
       loading(false);
-      newPasswordController.clear();
-      confirmPasswordController.clear();
-      currentPasswordController.clear();
+      newPasswordController!.clear();
+      confirmPasswordController!.clear();
+      currentPasswordController!.clear();
     });
   }
 
@@ -69,8 +67,8 @@ class ChangePasswordController extends BaseController {
   @override
   void onClose() {
     super.onClose();
-    newPasswordController.clear();
-    confirmPasswordController.clear();
-    currentPasswordController.clear();
+    newPasswordController!.clear();
+    confirmPasswordController!.clear();
+    currentPasswordController!.clear();
   }
 }

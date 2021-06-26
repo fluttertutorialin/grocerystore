@@ -7,8 +7,8 @@ class LoginController extends BaseController
   static LoginController get to => Get.find();
 
   //TEXT CLEAR AND GET
-  final TextEditingController emailController = TextEditingController();
-  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController? emailController = TextEditingController();
+  final TextEditingController? passwordController = TextEditingController();
 
   //PASSWORD VISIBLE OR NOT
   final _passwordVisible = false.obs;
@@ -16,12 +16,12 @@ class LoginController extends BaseController
   set passwordVisible(value) => this._passwordVisible.value = value;
 
   final _email = "".obs;
-  get email => this._email.value;
-  set email(value) => this._email.value = value;
+  get _emailGet => this._email.value;
+  set _emailSet(value) => this._email.value = value;
 
   final _password = "".obs;
-  get password => this._password.value;
-  set password(value) => this._password.value = value;
+  get _passwordGet => this._password.value;
+  set _passwordSet(value) => this._password.value = value;
 
   ///ON PRESS VALIDATION CHECK
   //bool get isEmailValid => RegExp(r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$').hasMatch(email);
@@ -44,8 +44,8 @@ class LoginController extends BaseController
   }
 
   //STORE TEXT-FIELD ON CHANGE VALUE
-  void setEmail(String? value) => email = value;
-  void setPassword(String? value) => password = value;
+  void setEmail(String? value) => _emailSet = value;
+  void setPassword(String? value) => _passwordSet = value;
 
   //VALIDATION
   String? emailValidation(String? value) => Validator.validateEmail(value);
@@ -62,7 +62,7 @@ class LoginController extends BaseController
       AppRoute.HOME.offAllNamed();
     }, error: (error){
       loading(false);
-      passwordController.clear();
+      passwordController!.clear();
     });
   }
 
@@ -117,8 +117,8 @@ class LoginController extends BaseController
   //LOGIN BY APPLICATION
   loginApplication() async {
     var loginParameter = LoginParameter(
-        email: email,
-        password: password.duSHA256());
+        email: _emailGet,
+        password: _passwordGet.duSHA256());
 
     // SENT API PARAMETER (FOR EXAMPLE BODY) JSON FORMAT
     loginParameter.toJson();
@@ -133,7 +133,7 @@ class LoginController extends BaseController
   @override
   void onClose() {
     super.onClose();
-    emailController.dispose();
-    passwordController.dispose();
+    emailController!.dispose();
+    passwordController!.dispose();
   }
 }
