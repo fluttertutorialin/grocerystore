@@ -11,57 +11,68 @@ class ChangePasswordPage extends GetWidget<ChangePasswordController> {
           child: SingleChildScrollView(
               child: Padding(
                   padding: EdgeInsets.all(15.sp),
-                  child:  Form(
+                  child: Form(
                       key: formKey,
-                      child:  Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(height: 120.h),
-                        _headerChangePassword(ValueString.emailDeveloperApp),
-                        SizedBox(height: 40.h),
-                        CustomTextFieldWidget(
-                            controller: controller.passwordController,
-                            validator: controller.passwordValidation,
-                            onChanged: controller.setPassword,
-                            obscureText: true,
-                            suffixIcon: IconFont.passwordSecure,
-                            maxLength: ValueString.passwordLength,
-                            labelText: ValueString.newPasswordFormLabel),
-                        SizedBox(height: 20.h),
-                        CustomTextFieldWidget(
-                            controller: controller.passwordController,
-                            validator: controller.passwordValidation,
-                            onChanged: controller.setPassword,
-                            obscureText: true,
-                            suffixIcon: IconFont.passwordSecure,
-                            maxLength: ValueString.passwordLength,
-                            labelText: ValueString.newConfirmPasswordFormLabel),
-                        SizedBox(height: 20.h),
-                        CustomTextFieldWidget(
-                            controller: controller.passwordController,
-                            validator: controller.passwordValidation,
-                            onChanged: controller.setPassword,
-                            obscureText: true,
-                            suffixIcon: IconFont.passwordSecure,
-                            maxLength: ValueString.passwordLength,
-                            labelText: ValueString.currentPasswordFormLabel),
-                        SizedBox(height: 10.h),
-                        Container(
-                            padding: EdgeInsets.all(10),
-                            child: TextButton(
-                                child: Container(
-                                    padding: EdgeInsets.all(10),
-                                    child: Center(
-                                        child: Text('Update password',
-                                            style:
-                                            AppTextStyle.buttonTextStyle))),
-                                style: ButtonStyle(
-                                    backgroundColor: MaterialStateProperty.all(
-                                        AppColors.primaryColor)),
-                                onPressed: () => Get.offAllNamed(AppRoute.HOME)))
-                      ]))))));
+                      child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 120.h),
+                            _headerChangePassword(),
+                            SizedBox(height: 40.h),
+                            CustomTextFieldWidget(
+                                controller: controller.newPasswordController,
+                                validator: controller.newPasswordValidation,
+                                onChanged: controller.setNewPassword,
+                                obscureText: true,
+                                suffixIcon: IconFont.passwordSecure,
+                                maxLength: ValueString.passwordLength,
+                                labelText: ValueString.newPasswordFormLabel),
+                            SizedBox(height: 20.h),
+                            CustomTextFieldWidget(
+                                controller:
+                                    controller.confirmPasswordController,
+                                validator:
+                                    controller.newConformPasswordValidation,
+                                onChanged: controller.setNewConfirmPassword,
+                                obscureText: true,
+                                suffixIcon: IconFont.passwordSecure,
+                                maxLength: ValueString.passwordLength,
+                                labelText:
+                                    ValueString.newConfirmPasswordFormLabel),
+                            SizedBox(height: 20.h),
+                            CustomTextFieldWidget(
+                                controller:
+                                    controller.currentPasswordController,
+                                validator: controller.currentPasswordValidation,
+                                onChanged: controller.setCurrentPassword,
+                                obscureText: true,
+                                suffixIcon: IconFont.passwordSecure,
+                                maxLength: ValueString.passwordLength,
+                                labelText:
+                                    ValueString.currentPasswordFormLabel),
+                            SizedBox(height: 10.h),
+                            Container(
+                                padding: EdgeInsets.all(10),
+                                child: TextButton(
+                                    child: Container(
+                                        padding: EdgeInsets.all(10),
+                                        child: Center(
+                                            child: Text('Update password',
+                                                style: AppTextStyle
+                                                    .buttonTextStyle))),
+                                    style: ButtonStyle(
+                                        backgroundColor:
+                                            MaterialStateProperty.all(
+                                                AppColors.primaryColor)),
+                                    onPressed: () {
+                                      if (formKey.currentState!.validate()) {
+                                        formKey.currentState!.save();
+                                        Get.back();
+                                      }
+                                    }))
+                          ]))))));
 
-  _headerChangePassword(String? email) =>
+  _headerChangePassword() =>
       Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Text('Change password', style: AppTextStyle.titleFormStyle),
         SizedBox(height: 10.h),

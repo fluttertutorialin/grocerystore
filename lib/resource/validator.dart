@@ -41,6 +41,36 @@ class Validator {
     }
   }
 
+  static String? validateNewPassword(String? v) {
+    if (v!.isEmpty) {
+      return ValueString.newPasswordCantBeEmpty;
+    } else if (v.length < 8) {
+      return ValueString.enterValidNewPassword;
+    } else {
+      return null;
+    }
+  }
+
+  static String? validateCurrentPassword(String? v) {
+    if (v!.isEmpty) {
+      return ValueString.currentPasswordCantBeEmpty;
+    } else if (v.length < 8) {
+      return ValueString.enterValidCurrentPassword;
+    } else {
+      return null;
+    }
+  }
+
+  static String? validateConfirmPassword(String? v, String password) {
+    if (v!.isEmpty || password.isEmpty) {
+      return ValueString.newConfirmPasswordCantBeEmpty;
+    } else if (v.length < 8 || password.length < 8 || v != password) {
+      return ValueString.enterNewPasswordMatch;
+    } else {
+      return null;
+    }
+  }
+
   static String? validateMobile(String? v) {
     if (v!.isEmpty) {
       return ValueString.mobileCantBeEmpty;
@@ -50,6 +80,7 @@ class Validator {
       return null;
     }
   }
+}
 
 /*
   static String? validateDropDownEmpty<T>(T? v) {
@@ -60,17 +91,7 @@ class Validator {
     }
   }
 
-  static String? validateConfirmPassword(String? v, String password) {
-    if (v!.isEmpty || password.isEmpty) {
-      return Strings.passwordCantBeEmpty;
-    } else if (v.length < 8 || password.length < 8 || v != password) {
-      return Strings.confirmPasswordValidation;
-    } else {
-      return null;
-    }
-  }*/
-
-/*  static String? validateCheckbox({
+  static String? validateCheckbox({
     bool v = false,
     String error = Strings.checkboxValidation,
   }) {
@@ -79,5 +100,5 @@ class Validator {
     } else {
       return null;
     }
-  }*/
-}
+}*/
+

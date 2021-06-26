@@ -58,6 +58,12 @@ class ValueString {
   static const String enterValidPassword = 'Enter the password minimum 8 characters';
   static const String enterValidMobile = 'Enter the mobile number must be 10 digit';
   static const String enterValidUserName = 'Enter the username must be 3 digit';
+  static const String newPasswordCantBeEmpty = 'New password $cantBeEmpty';
+  static const String enterValidNewPassword = 'Enter the new password minimum 8 characters';
+  static const String newConfirmPasswordCantBeEmpty = 'New confirm password $cantBeEmpty';
+  static const String enterNewPasswordMatch = 'New password not match!';
+  static const String currentPasswordCantBeEmpty = 'Current password $cantBeEmpty';
+  static const String enterValidCurrentPassword = 'Enter the current password minimum 8 characters';
 
   // BUTTON
   static const String loginButton = 'Login';
