@@ -72,13 +72,12 @@ class SignUpPage extends GetView<SignUpController> {
                             })
                       ]))))));
 
-  _headerSignUp(){
-    return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(ValueString.welcomeHeader, style: AppTextStyle.titleFormStyle),
-          SizedBox(height: 10.h),
-          Text(ValueString.newAccountHeader, style: AppTextStyle.descriptionFormStyle)
-        ]);
+  _headerSignUp() {
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      Text(ValueString.welcomeHeader, style: AppTextStyle.titleFormStyle),
+      SizedBox(height: 10.h),
+      Text(ValueString.newAccountHeader,
+          style: AppTextStyle.descriptionFormStyle)
+    ]);
   }
 }

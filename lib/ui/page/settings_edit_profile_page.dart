@@ -47,7 +47,9 @@ class SettingsEditProfilePage extends StatelessWidget {
         SizedBox(height: 10.h),
         _settingMenu(title: 'Edit Profile', onTap: () {}),
         Divider(),
-        _settingMenu(title: 'Change password', onTap: () {}),
+        _settingMenu(title: 'Change password', onTap: () {
+          Get.toNamed(AppRoute.CHANGE_PASSWORD);
+        }),
         Divider(),
         _settingMenu(title: 'Coupons', onTap: () {}),
         Divider(),

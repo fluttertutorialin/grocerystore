@@ -41,7 +41,7 @@ class OTPPage extends StatelessWidget {
                                 style: ButtonStyle(
                                     backgroundColor: MaterialStateProperty.all(
                                         AppColors.primaryColor)),
-                                onPressed: () => AppRoute.HOME.changeScreen())),
+                                onPressed: () => Get.offAllNamed(AppRoute.HOME))),
                         SizedBox(height: 10.h),
                         Center(
                             child: Text('This session will end in 20 seconds.',

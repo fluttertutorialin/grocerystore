@@ -23,4 +23,5 @@ abstract class AppRoute {
   static const SETTINGS_EDIT_PROFILE = 'settingsEditProfile';
   static const OTP = 'otp';
   static const NOTIFICATION = 'notification';
+  static const CHANGE_PASSWORD = 'changePassword';
 }

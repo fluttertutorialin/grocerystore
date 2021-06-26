@@ -89,5 +89,9 @@ class AppPage {
         name: AppRoute.NOTIFICATION,
         page: () => NotificationPage()),
 
+    GetPage(
+        binding: ChangePasswordBinding(),
+        name: AppRoute.CHANGE_PASSWORD,
+        page: () => ChangePasswordPage()),
   ];
 }

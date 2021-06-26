@@ -38,7 +38,9 @@ class ValueString {
   static const String emailFormLabel = 'Email';
   static const String passwordFormLabel = 'Password';
   static const String mobileFormLabel = 'Mobile';
-
+  static const String newPasswordFormLabel = 'New password';
+  static const String newConfirmPasswordFormLabel = 'New confirm password';
+  static const String currentPasswordFormLabel = 'Current password';
   // LABEL
   static const String doNotHaveAccount = 'Don\'t have account?';
   static const String signUp = 'Sign Up';
