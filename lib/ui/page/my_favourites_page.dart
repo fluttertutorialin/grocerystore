@@ -70,7 +70,7 @@ class MyFavouritesPage extends StatelessWidget {
                                                   BorderRadius.all(
                                                       Radius.circular(
                                                           5.0))),
-                                              width: 150.w,
+                                              width: 160.w,
                                               child: Column(children: [
                                                 Padding(
                                                     padding: EdgeInsets.all(5),

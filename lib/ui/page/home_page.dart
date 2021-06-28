@@ -171,7 +171,7 @@ class HomePage extends GetWidget<HomeController> {
                                       decoration: BoxDecoration(
                                           borderRadius: BorderRadius.all(
                                               Radius.circular(5.0))),
-                                      width: 150.w,
+                                      width: 160.w,
                                       child: Column(children: [
                                         Padding(
                                             padding: EdgeInsets.all(5),
@@ -271,7 +271,7 @@ class HomePage extends GetWidget<HomeController> {
                                       decoration: BoxDecoration(
                                           borderRadius: BorderRadius.all(
                                               Radius.circular(5.0))),
-                                      width: 150.w,
+                                      width: 160.w,
                                       child: Column(children: [
                                         Padding(
                                             padding: EdgeInsets.all(5),

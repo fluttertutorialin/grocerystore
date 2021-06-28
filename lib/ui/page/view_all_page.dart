@@ -44,7 +44,7 @@ class ViewAllPage extends StatelessWidget {
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       childAspectRatio: 0.76,
                       crossAxisCount: 2,
-                      crossAxisSpacing: 0.0,
+                      crossAxisSpacing: 1.0,
                       mainAxisSpacing: 4.0),
                   itemBuilder: (BuildContext context, int index) {
                     return Container(
@@ -70,7 +70,7 @@ class ViewAllPage extends StatelessWidget {
                                                       BorderRadius.all(
                                                           Radius.circular(
                                                               5.0))),
-                                              width: 150.w,
+                                              width: 160.w,
                                               child: Column(children: [
                                                 Padding(
                                                     padding: EdgeInsets.all(5),
