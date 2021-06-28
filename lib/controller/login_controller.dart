@@ -3,7 +3,7 @@ import '../model/sent/sent_package.dart' show LoginParameter;
 import '../base/base_controller.dart';
 
 class LoginController extends BaseController with SingleGetTickerProviderMixin {
-  static LoginController get to => Get.find(tag: 'loginController');
+  //static LoginController get to => Get.find(tag: 'loginController');
 
   //TEXT CLEAR AND GET
   final TextEditingController? emailController = TextEditingController();
