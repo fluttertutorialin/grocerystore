@@ -36,6 +36,7 @@ class HomeController extends GetxController with StateMixin<List<dynamic>> {
 import '../base/base_controller.dart';
 import '../model/get/home/home_response.dart';
 import '../import_package.dart';
+import 'login_controller.dart';
 
 class HomeController extends BaseController {
   //GET THE DATA API STORE THE DATA RX-LIST
@@ -46,7 +47,6 @@ class HomeController extends BaseController {
   @override
   void onInit() {
     super.onInit();
-
     _postResponseAPI();
   }
 

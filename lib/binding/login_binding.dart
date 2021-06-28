@@ -16,6 +16,6 @@ class LoginBinding extends Bindings {
 
     Get.lazyPut<GetStorageProvider>(() => GetStorageRepository(Get.find()), fenix: false);
 
-    Get.lazyPut<LoginController>(() => LoginController());
+    Get.lazyPut<LoginController>(() => LoginController(), tag: 'loginController');
   }
 }

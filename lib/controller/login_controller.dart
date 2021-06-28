@@ -2,9 +2,8 @@ import '../import_package.dart';
 import '../model/sent/sent_package.dart' show LoginParameter;
 import '../base/base_controller.dart';
 
-class LoginController extends BaseController
-    with SingleGetTickerProviderMixin {
-  static LoginController get to => Get.find();
+class LoginController extends BaseController with SingleGetTickerProviderMixin {
+  static LoginController get to => Get.find(tag: 'loginController');
 
   //TEXT CLEAR AND GET
   final TextEditingController? emailController = TextEditingController();
@@ -15,11 +14,11 @@ class LoginController extends BaseController
   get passwordVisible => this._passwordVisible.value;
   set passwordVisible(value) => this._passwordVisible.value = value;
 
-  final _email = "".obs;
+  final _email = ''.obs;
   get _emailGet => this._email.value;
   set _emailSet(value) => this._email.value = value;
 
-  final _password = "".obs;
+  final _password = ''.obs;
   get _passwordGet => this._password.value;
   set _passwordSet(value) => this._password.value = value;
 
@@ -49,18 +48,28 @@ class LoginController extends BaseController
 
   //VALIDATION
   String? emailValidation(String? value) => Validator.validateEmail(value);
-  String? passwordValidation(String? value) => Validator.validatePassword(value);
+  String? passwordValidation(String? value) =>
+      Validator.validatePassword(value);
 
   // LOGIN VALIDATION CHECK THE FORM
   Future<void> loginResponseAPI(Function loading) async {
     loading(true);
 
     //LOGIN API CALL
-    getAPI(success: (value){
+    getAPI(success: (value) {
       loading(false);
       loginSignUpSession();
+
+      emailController!.dispose();
+      passwordController!.dispose();
+
+      setEmail('');
+      setPassword('');
+
+      Get.delete<LoginController>(tag: 'loginController');
+
       AppRoute.HOME.offAllNamed();
-    }, error: (error){
+    }, error: (error) {
       loading(false);
       passwordController!.clear();
     });
@@ -116,9 +125,8 @@ class LoginController extends BaseController
 
   //LOGIN BY APPLICATION
   loginApplication() async {
-    var loginParameter = LoginParameter(
-        email: _emailGet,
-        password: _passwordGet.duSHA256());
+    var loginParameter =
+        LoginParameter(email: _emailGet, password: _passwordGet.duSHA256());
 
     // SENT API PARAMETER (FOR EXAMPLE BODY) JSON FORMAT
     loginParameter.toJson();
@@ -133,7 +141,16 @@ class LoginController extends BaseController
   @override
   void onClose() {
     super.onClose();
-    emailController!.dispose();
-    passwordController!.dispose();
+
+    var loginControllerIsRegister =
+        Get.isRegistered<LoginController>(tag: 'loginController');
+    if (loginControllerIsRegister) {
+      passwordController!.dispose();
+    }
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
   }
 }

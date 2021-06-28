@@ -13,9 +13,10 @@ import '../widget/custom_text_field_widget.dart';
 import '../widget/stagger_animation.dart';
 import '../../import_package.dart';
 
-class LoginPage extends GetView<LoginController> {
+class LoginPage extends StatelessWidget {
   //VALIDATION USE
   final formKey = GlobalKey<FormState>();
+  final controller = Get.put(LoginController(), tag: 'loginController');
 
   @override
   Widget build(BuildContext context) => Scaffold(
