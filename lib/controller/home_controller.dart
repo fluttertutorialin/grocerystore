@@ -47,6 +47,12 @@ class HomeController extends BaseController {
   @override
   void onInit() {
     super.onInit();
+
+  }
+
+  @override
+  onReady() {
+    super.onReady();
     _postResponseAPI();
   }
 
