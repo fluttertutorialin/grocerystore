@@ -8,7 +8,6 @@ class AppBinding extends Bindings {
 
     //LOCAL STORAGE SESSION PROVIDER AND REPOSITORY
     Get.lazyPut<GetStorage>(() => GetStorage(), fenix: true);
-
     Get.lazyPut<GetStorageProvider>(() => GetStorageRepository(Get.find()), fenix: true);
   }
 }
