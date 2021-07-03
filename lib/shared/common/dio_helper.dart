@@ -25,12 +25,12 @@ const MethodValues = {
 
 final CancelToken _cancelToken = new CancelToken();
 
-_parseAndDecode(String response) {
-  return jsonDecode(response);
+_parseAndDecode(String? response) {
+  return jsonDecode(response!);
 }
 
-_parseJson(String text) {
-  return compute(_parseAndDecode, text);
+_parseJson(String? text) {
+  return compute(_parseAndDecode, text!);
 }
 
 class DioHelper {
@@ -126,13 +126,15 @@ class DioHelper {
     var headers;
 
     if (Global.accessToken != null) {
-      headers = {'Authorization': 'Bearer ${Global.accessToken}'};
+      headers = {
+        HttpHeaders.authorizationHeader: 'Bearer ${Global.accessToken}'
+      };
     }
     return headers;
   }
 
-  _getError(DioError error) {
-    switch (error.type) {
+  _getError(DioError? error) {
+    switch (error!.type) {
       case DioErrorType.cancel:
         {
           return ErrorEntity(
