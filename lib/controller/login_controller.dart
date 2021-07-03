@@ -60,8 +60,8 @@ class LoginController extends BaseController with SingleGetTickerProviderMixin {
       loading(false);
       loginSignUpSession();
 
-      emailController!.dispose();
-      passwordController!.dispose();
+      emailController!.clear();
+      passwordController!.clear();
 
       setEmail('');
       setPassword('');
@@ -145,7 +145,7 @@ class LoginController extends BaseController with SingleGetTickerProviderMixin {
     var loginControllerIsRegister =
         Get.isRegistered<LoginController>(tag: 'loginController');
     if (loginControllerIsRegister) {
-      passwordController!.dispose();
+      passwordController!.clear();
     }
   }
 

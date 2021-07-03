@@ -23,6 +23,7 @@
 
 import 'package:device_info/device_info.dart';
 import 'package:flutter_config/flutter_config.dart';
+import 'app_binding.dart';
 import 'shared/common/dio_helper.dart';
 import 'shared/common/global.dart';
 import 'package:flutter/services.dart';
@@ -102,6 +103,7 @@ class MyApp extends StatelessWidget {
         //FOR FIRST CALL THE SPLASH AND BINDING
         initialRoute: AppRoute.SPLASH,
         defaultTransition: Transition.fade,
+        initialBinding: AppBinding(),
         enableLog: true,
         navigatorKey: Get.key,
 

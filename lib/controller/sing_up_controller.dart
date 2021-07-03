@@ -60,7 +60,7 @@ class SignUpController extends BaseController
     super.onClose();
     singUpButtonController.dispose();
 
-    emailController.dispose();
-    passwordController.dispose();
+    emailController.clear();
+    passwordController.clear();
   }
 }
